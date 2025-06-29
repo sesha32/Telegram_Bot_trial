@@ -1,6 +1,6 @@
 from telegram.ext import Application, CommandHandler
 
-Token = "7761347098:AAGmvHFyrwG2IBExX7VnKUFAYdVMGVEJOzQ"
+Token = ""
 
 app = Application.builder().token(Token).build()
 
