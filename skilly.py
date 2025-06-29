@@ -6,6 +6,16 @@ app = Application.builder().token(Token).build()
 
 async def start(update, context):
     await update.message.reply_text("Hello! I am hiki. How can I assist you today?")
+    await update.message.reply_text(
+        "Available commands:\n"
+        "/start -> Welcome!\n"
+        "/help -> This particular message\n"
+        "/content -> About\n"
+        "/python -> The first topic\n"
+        "/sql -> about sql\n"
+        "/java -> About java\n"
+        "/contact -> to contact admin"
+    )
 
 async def help(update, context):
     await update.message.reply_text(
